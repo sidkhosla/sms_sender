@@ -6,9 +6,9 @@ auth_token = 'Get using Twilio website'
 client = Client(account_sid, auth_token) 
  
 message = client.messages.create( 
-                              from_='+447401227823',  
+                            #   from_='number given by twilio',  
                               body='hi',      
-                              to='+447497087646' 
+                            #   to='verfied number' 
                           ) 
  
 print(message.sid)
